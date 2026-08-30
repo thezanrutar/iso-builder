@@ -55,7 +55,7 @@ export function getAtemIp(): string | null {
 export function setAtemIp(ip: string | null): void {
   db.prepare(`
     UPDATE settings
-    SELECT
+    SET
       atem_ip = ?,
       updated_at = CURRENT_TIMESTAMP
     WHERE id = 1
