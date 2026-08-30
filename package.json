@@ -26,8 +26,13 @@
   },
   "homepage": "https://github.com/thezanrutar/iso-builder#readme",
   "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
     "@types/node": "^26.4.0",
     "tsx": "^4.23.13",
     "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "atem-connection": "^3.10.2",
+    "better-sqlite3": "^13.0.3"
   }
 }
