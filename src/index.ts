@@ -19,7 +19,7 @@ async function main(): Promise<void> {
   const atemIp = getAtemIp()
 
   if(!atemIp) {
-    console.log(`[ATEM] No ATEM IP configured')
+    console.log(`[ATEM] No ATEM IP configured`)
     return
   }
 

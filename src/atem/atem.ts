@@ -1,6 +1,4 @@
 import { Atem } from 'atem-connection'
-import { error } from 'node:console'
-import { connected } from 'node:process'
 
 export const atem = new Atem()
 
@@ -13,7 +11,7 @@ atem.on('info', (message) => {
 })
 
 atem.on('connected', () => {
-  console.log('[ATEM]' Connected')
+  console.log('[ATEM] Connected')
 
   const me = atem.state?.video.mixEffects[0]
 
@@ -24,7 +22,7 @@ atem.on('connected', () => {
 })
 
 atem.on('disconnected', () => {
-  console.warn('[ATEM] Disconnected)
+  console.warn('[ATEM] Disconnected')
 })
 
 atem.on('stateChanged', (state, paths) => {
