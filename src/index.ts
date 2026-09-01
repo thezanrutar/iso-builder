@@ -2,6 +2,7 @@ import {
   initDatabase,
   closeDatabase,
   getAtemIp,
+  setAtemIp,
 } from './db/database.js'
 
 import {
@@ -16,6 +17,7 @@ async function main(): Promise<void> {
   console.log('[DB] Initializing database...')
   initDatabase()
 
+  setAtemIp('192.168.1.30')
   const atemIp = getAtemIp()
 
   if(!atemIp) {
